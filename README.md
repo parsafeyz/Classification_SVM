@@ -18,8 +18,15 @@ This notebook explores how to use **Support Vector Machines (SVM)** with the RBF
 
 ```python
 import pandas as pd
+import pylab as pl
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn import preprocessing, svm
+import scipy.optimize as opt
+from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix, f1_score, jaccard_score
+import matplotlib.pyplot as plt
+from sklearn import svm
+from sklearn.metrics import classification_report, confusion_matrix
+import itertools
+from sklearn.metrics import f1_score
+from sklearn.metrics import jaccard_score
+%matplotlib inline
